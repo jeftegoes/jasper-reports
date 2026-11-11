@@ -1,0 +1,89 @@
+<!-- Created with Jaspersoft Studio version 7.0.8.final using JasperReports Library version 7.0.8-6f896111  -->
+<jasperReport name="student-report" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0619193-0ad2-4568-92d1-07d500fe8da5">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="id" class="java.lang.Long"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="course" class="java.lang.String"/>
+	<field name="enrollmentDate" class="java.time.LocalDate"/>
+	<field name="grade" class="java.lang.Double"/>
+	<background splitType="Stretch"/>
+	<title height="54" splitType="Stretch">
+		<element kind="staticText" uuid="04856cf9-3239-43c9-98ac-df1393ada0be" x="110" y="0" width="360" height="50" fontName="Arial Black" fontSize="30.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Report of Students]]></text>
+		</element>
+	</title>
+	<columnHeader height="19" splitType="Stretch">
+		<element kind="staticText" uuid="2c7566c4-47bc-4d90-9ac5-10b299910082" x="-10" y="0" width="30" height="14" fontName="Arial">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<text><![CDATA[id]]></text>
+		</element>
+		<element kind="staticText" uuid="897a9973-979c-470e-aed2-1cde2d7cb6eb" x="30" y="0" width="130" height="14" fontName="Arial">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<text><![CDATA[name]]></text>
+		</element>
+		<element kind="staticText" uuid="a5ac4420-c775-4cc4-836a-107e963b8513" x="170" y="0" width="140" height="14" fontName="Arial">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<text><![CDATA[email]]></text>
+		</element>
+		<element kind="staticText" uuid="e6bc6bd9-09ba-4e92-bc06-f7009059fd10" x="330" y="1" width="90" height="14" fontName="Arial">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<text><![CDATA[course]]></text>
+		</element>
+		<element kind="staticText" uuid="9d7ab9a7-d30f-49e3-9425-46f665a6d759" x="430" y="1" width="90" height="14" fontName="Arial">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<text><![CDATA[enrollmentDate]]></text>
+		</element>
+		<element kind="staticText" uuid="a1dd2e82-e67b-42d5-825b-25ecd8825296" x="527" y="1" width="44" height="14" fontName="Arial">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<text><![CDATA[grade]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<element kind="textField" uuid="f6fc2a35-cb11-4aaf-80ea-b04e36f9eba2" x="-10" y="0" width="30" height="14" fontName="Arial">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="f9e9b444-539c-405f-a4ff-e4d28d8388ac" x="30" y="0" width="130" height="14" fontName="Arial">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+				<expression><![CDATA[$F{name}]]></expression>
+			</element>
+			<element kind="textField" uuid="c997d286-5503-4303-bb33-b6af9b56afd9" x="170" y="0" width="140" height="14" fontName="Arial">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+				<expression><![CDATA[$F{email}]]></expression>
+			</element>
+			<element kind="textField" uuid="52f4bb73-2492-4bd7-a334-89dab30e4079" x="330" y="1" width="90" height="14" fontName="Arial">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+				<expression><![CDATA[$F{course}]]></expression>
+			</element>
+			<element kind="textField" uuid="f9621b2c-3be3-4bef-aa18-9e82bd57b2df" x="430" y="1" width="90" height="14" fontName="Arial">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+				<expression><![CDATA[$F{enrollmentDate}]]></expression>
+			</element>
+			<element kind="textField" uuid="bf791288-a972-4c16-8c3e-44918a15de49" x="527" y="1" width="44" height="14" fontName="Arial">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc560e9-10e4-4fe3-b1d0-79ac23667a73"/>
+				<expression><![CDATA[$F{grade}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<pageFooter height="19" splitType="Stretch">
+		<element kind="textField" uuid="f5c7d90a-21cb-4307-85e5-23db57a449f6" x="490" y="1" width="80" height="16" fontName="Arial" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="55" splitType="Stretch"/>
+</jasperReport>

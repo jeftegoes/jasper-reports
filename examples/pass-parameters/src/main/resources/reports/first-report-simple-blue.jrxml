@@ -1,0 +1,86 @@
+<!-- Created with Jaspersoft Studio version 7.0.8.final using JasperReports Library version 7.0.8-6f896111  -->
+<jasperReport name="Simple_Blue" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="95f3c088-4939-4b54-b01e-6ad5795a79f4">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<parameter name="studentName" class="java.lang.String"/>
+	<query language="SQL"><![CDATA[SELECT * FROM ADDRESS]]></query>
+	<field name="id" class="java.lang.Long"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="street" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<background/>
+	<title height="72">
+		<element kind="frame" uuid="54191a0a-7cbb-40ba-bc1e-0de33467a01d" x="-20" y="-20" width="595" height="92" backcolor="#006699" mode="Opaque">
+			<element kind="staticText" uuid="aa9bf55b-2668-40d0-94d8-83378f4bf8d9" x="20" y="20" width="234" height="43" forecolor="#FFFFFF" fontName="Arial" fontSize="34.0" bold="true" italic="false">
+				<text><![CDATA[TITLE]]></text>
+			</element>
+			<element kind="textField" uuid="94447465-8422-47f6-adee-b96dacc8dd88" x="490" y="31" width="100" height="30" forecolor="#FFFFFF" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$P{studentName}]]></expression>
+			</element>
+		</element>
+	</title>
+	<pageHeader height="13"/>
+	<columnHeader height="21">
+		<element kind="line" uuid="53d5d106-b1db-4735-82d2-a07ba1ea4fe9" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+		<element kind="staticText" uuid="82616d14-459a-4969-9c4e-cb8ea8d5bb7e" x="0" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" mode="Opaque" fontSize="14.0" bold="true" hTextAlign="Center">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0c0b3130-6723-4400-877a-126852420b21"/>
+			<text><![CDATA[ID]]></text>
+		</element>
+		<element kind="staticText" uuid="8890c4ca-b032-43d8-8b65-6a979b52bcdd" x="111" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" mode="Opaque" fontSize="14.0" bold="true" hTextAlign="Center">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6262de66-08d2-4a76-a29e-6c12b0872dc0"/>
+			<text><![CDATA[FIRSTNAME]]></text>
+		</element>
+		<element kind="staticText" uuid="f4bd764e-bc56-4cd4-ad54-5cc99db8c315" x="222" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" mode="Opaque" fontSize="14.0" bold="true" hTextAlign="Center">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c2777b8-2c4e-4cf9-9927-26ec7d3d3352"/>
+			<text><![CDATA[LASTNAME]]></text>
+		</element>
+		<element kind="staticText" uuid="03e3e97b-5bfc-41d4-9b08-42af2a97269e" x="333" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" mode="Opaque" fontSize="14.0" bold="true" hTextAlign="Center">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5b371027-77e1-4da0-89c5-ab6deaf96320"/>
+			<text><![CDATA[STREET]]></text>
+		</element>
+		<element kind="staticText" uuid="6de707b5-1ec3-4724-89a5-690c11fd3f6a" x="444" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" mode="Opaque" fontSize="14.0" bold="true" hTextAlign="Center">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d2bbca-7a3f-49d1-9a20-3521b220163a"/>
+			<text><![CDATA[CITY]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<element kind="line" uuid="b9ac1dd8-b7d3-4549-a469-a89fc148b8dd" x="0" y="19" width="555" height="1" positionType="FixRelativeToBottom"/>
+			<element kind="textField" uuid="ae36ec43-2f11-468d-b19b-8f693024bb36" x="0" y="0" width="111" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0c0b3130-6723-4400-877a-126852420b21"/>
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="b481fa2c-c1f4-40b3-88c8-9f6e632edc1b" x="111" y="0" width="111" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6262de66-08d2-4a76-a29e-6c12b0872dc0"/>
+				<expression><![CDATA[$F{firstName}]]></expression>
+			</element>
+			<element kind="textField" uuid="09527155-e3a3-4c55-ae85-bfa0b11fc615" x="222" y="0" width="111" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c2777b8-2c4e-4cf9-9927-26ec7d3d3352"/>
+				<expression><![CDATA[$F{lastName}]]></expression>
+			</element>
+			<element kind="textField" uuid="60cd814c-a1b6-4509-988e-bb983b32a4c1" x="333" y="0" width="111" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5b371027-77e1-4da0-89c5-ab6deaf96320"/>
+				<expression><![CDATA[$F{street}]]></expression>
+			</element>
+			<element kind="textField" uuid="126a2427-2c18-4ea3-b4d1-569b063e1ef6" x="444" y="0" width="111" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d2bbca-7a3f-49d1-9a20-3521b220163a"/>
+				<expression><![CDATA[$F{city}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter/>
+	<pageFooter height="17">
+		<element kind="textField" uuid="59edaefc-8f02-4fd6-b802-c6b4c46b75ac" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" mode="Opaque" hTextAlign="Right">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="5024e8a3-fa6f-485b-b8b0-27e4a6aee479" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" mode="Opaque" evaluationTime="Report">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="4ebc0feb-f10a-41c4-b25b-5e4eac0074db" x="0" y="4" width="100" height="13" pattern="EEEEE dd MMMMM yyyy">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary/>
+</jasperReport>
