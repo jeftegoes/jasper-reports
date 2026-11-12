@@ -1,10 +1,46 @@
-# 1. Parameters, Fields, Variables
+# Jasper Report Overview and Examples <!-- omit in toc -->
+
+## Contents <!-- omit in toc -->
+
+- [1. What is reporting and why we need it?](#1-what-is-reporting-and-why-we-need-it)
+- [2. What is jasper report?](#2-what-is-jasper-report)
+- [3. Bands](#3-bands)
+- [4. Parameters, Fields, Variables](#4-parameters-fields-variables)
+- [5. Embedding Fonts](#5-embedding-fonts)
+- [6. Dependencies](#6-dependencies)
+
+# 1. What is reporting and why we need it?
+
+- Representing Data.
+- Having Charts like Bar Chart and Pie Chart.
+- **Examples:** Sales Report, Report Card Of Student.
+
+# 2. What is jasper report?
+
+- Its an open source tool to generate reports.
+- It offers different formats like PDF, HTML, MS Excel.
+- Jasper Studio Community Edition.
+- Jasper Reports are having xml format – `jrxml` extention.
+- Compiling this JRXML file gives `.jasper` file.
+- In Java we use `JasperCompileManager` class to compile Jasper Report.
+
+# 3. Bands
+
+- **Title Band:** Appears just once throughout the report on the very top of the first page.
+  - It will not appear on any subsequent pages.
+- **Page Header:** Appears at the top of each and every page (except it is typically superseded by the title on the very first page).
+  - It repeats on every subsequent page.
+- **Column Header, Detail, and Column Footer:** These three work in combination and repeat across pages depending on the volume of data in the **Detail band**.
+  - If records span multiple pages, the column headers and footers will repeat accordingly to structure the tabular data.
+- **Page Footer:** Appears at the bottom of each and every page (often used for elements like page numbers, e.g., "Page 1 of 2").
+
+# 4. Parameters, Fields, Variables
 
 - Parameter = `$P`
 - Field = `$F`
 - Variable = `$V`
 
-# 2. Embedding Fonts
+# 5. Embedding Fonts
 
 - Configure the Font in Jaspersoft Studio
 - Instead of relying on system fonts, you must explicitly declare your font files (.ttf) inside the designer tool:
@@ -16,7 +52,7 @@
      1. Set PDF Encoding to Identity-H (Unicode with horizontal writing).
      2. Check the box for Embed this font in PDF document.
 
-# 3. Dependencies
+# 6. Dependencies
 
 ```xml
     <dependency>

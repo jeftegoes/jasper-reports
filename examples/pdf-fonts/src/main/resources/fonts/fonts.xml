@@ -5,7 +5,6 @@
         <bold><![CDATA[fonts/arialbd.ttf]]></bold>
         <italic><![CDATA[fonts/ariali.ttf]]></italic>
         <boldItalic><![CDATA[fonts/arialbi.ttf]]></boldItalic>
-        <pdfEncoding></pdfEncoding>
         <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
     </fontFamily>
 
@@ -14,19 +13,16 @@
         <bold><![CDATA[fonts/ARIALNB.TTF]]></bold>
         <italic><![CDATA[fonts/ARIALNI.TTF]]></italic>
         <boldItalic><![CDATA[fonts/ARIALNBI.TTF]]></boldItalic>
-        <pdfEncoding></pdfEncoding>
         <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
     </fontFamily>
 
     <fontFamily name="Arial Black">
         <normal><![CDATA[fonts/ariblk.ttf]]></normal>
-        <pdfEncoding></pdfEncoding>
         <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
     </fontFamily>
 
     <fontFamily name="Arial Rounded MT Bold">
         <normal><![CDATA[fonts/ARLRDBD.TTF]]></normal>
-        <pdfEncoding></pdfEncoding>
         <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
     </fontFamily>
 
