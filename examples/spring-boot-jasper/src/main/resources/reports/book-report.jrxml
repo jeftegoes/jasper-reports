@@ -1,0 +1,29 @@
+<!-- Created with Jaspersoft Studio version 7.0.8.final using JasperReports Library version 7.0.8-6f896111  -->
+<jasperReport name="book-report" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="35acc390-0803-457d-aa63-a9969ee0d7b7">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="id" class="java.lang.Long"/>
+	<field name="name" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<columnHeader height="49" splitType="Stretch">
+		<element kind="staticText" uuid="28e12b64-13ca-4ca9-9941-82546645bd3a" x="10" y="10" width="100" height="30">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="398f280f-cae7-49f0-8d3a-0c20dffdb04b"/>
+			<text><![CDATA[id]]></text>
+		</element>
+		<element kind="staticText" uuid="46c4acc0-4c6c-4a4c-b401-f27977aa66cd" x="130" y="10" width="100" height="30">
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b290c251-6f19-4f94-abce-5e808f66e0ab"/>
+			<text><![CDATA[name]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<element kind="textField" uuid="2a892ab7-de12-471e-bda1-46ab3892873c" x="10" y="10" width="100" height="30">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="398f280f-cae7-49f0-8d3a-0c20dffdb04b"/>
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="e6ef39c9-306e-4e59-bd4a-be8729f1aa7b" x="130" y="10" width="100" height="30">
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b290c251-6f19-4f94-abce-5e808f66e0ab"/>
+				<expression><![CDATA[$F{name}]]></expression>
+			</element>
+		</band>
+	</detail>
+</jasperReport>
